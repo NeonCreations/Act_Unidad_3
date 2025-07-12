@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fondos de pantalla</title>
+	<link rel="stylesheet" href="estilos.css">	
+</head>
+
+<body>
+
+<div id="presentacion">
+<script>
+/*línea que permite escribir*/
+document.write('¡Bienvenido!');//escribo texto hola
+document.write('<br>'); //escribo una etiqueta html de salto de línea en el texto (retorno de carro).
+document.write('<br>');
+document.write('Selecciona tu color preferido.');
+document.write('<br>');
+document.write('<br>');
+</script>
+</div>
+
+<div class= "lista">
+	<h1>1. Rojo</h1>
+	<h1>2. Azul</h1>
+	<h1>3. Verde</h1>
+	<h1>4. Amarillo</h1>
+	<h1>5. Naranja</h1>
+	<h1>6. Morado</h1>
+</div>
+
+<div id="buttons">
+<button onclick="seleccion()">Cambiar color</button>
+</div>
+
+
+<script>
+function seleccion(){
+
+	var color;
+	color=prompt ('Escoje un numero del 1 al 6...');
+
+	if (color === "1") {
+		document.body.style.backgroundColor ='#d92727';
+	}
+	else if (color === "2") {
+		document.body.style.backgroundColor ='#2368c9';
+	}
+	else if (color === "3") {
+		document.body.style.backgroundColor = '#3bb421';
+	}
+	else if (color === "4") {
+		document.body.style.backgroundColor = '#ffc644';
+	}
+	else if (color === "5") {
+		document.body.style.backgroundColor = '#dd661a';
+	}
+	else if (color === "6") {
+		document.body.style.backgroundColor = '#c145e6';
+	}
+	else {
+		alert('he dicho del 1 al 6... ¯¯\_( ͡❛ ⍨ ͡❛)_/¯ ');
+	}
+}
+</script>
+
+</body>
+</html>
+
+<!--
+<div id="buttons">
+<button onclick="cambiarFondo('#e74a4a')">Rojo</button>
+<button onclick="cambiarFondo('lightblue')">Azul</button>
+<button onclick="cambiarFondo('lightyellow')">Amarillo</button>
+</div>
+
+<script>
+  function cambiarFondo(color) {
+    document.body.style.backgroundColor = color;
+  }
+</script>
+
+</body>
+</html>
+
+
